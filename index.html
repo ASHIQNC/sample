@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- <h1>vaccination eligibility</h1>
+    <form action="">
+      <input id="a1" type="text" placeholder="enter first number" />
+      <input id="a2" type="text" placeholder="enter second number" />
+      <button onclick="greatestNumber()">Check eligibility</button>
+    </form> -->
+
+    <div class="text-center p-5 container container__wrapper">
+      <h1 class="mt-5 heading__greatest" style="color: black">
+        Greatest Number Check
+      </h1>
+      <form action="" class="bg-light mt-5 rounded-4 border form__wrapper">
+        <div class="form__container">
+          <div class="mt-2 p-3">
+            <input
+              id="a1"
+              class="form-control first__number"
+              type="text"
+              placeholder="Enter the first number" />
+          </div>
+
+          <div class="mt-2 p-3">
+            <input
+              id="a2"
+              class="form-control second__number"
+              type="text"
+              placeholder="Enter the second number" />
+          </div>
+          <div class="mt-2 p-3">
+            <button
+              onclick="greatestNumber()"
+              class="btn btn-primary button__wrapper">
+              Check
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+
+  <script>
+    function greatestNumber() {
+      // value call aakiyaa we will get the value for the input
+      //stringine number aayi convert aakan we are using parseInt
+      firstNumber = parseInt(a1.value);
+      secondNumber = parseInt(a2.value);
+      firstNumber > secondNumber
+        ? alert(`${firstNumber} is greater`)
+        : alert(`${secondNumber} is greater`);
+    }
+  </script>
+</html>
